@@ -70,7 +70,7 @@ public class Triangle : Shape
     private void Check()
     {
         if (!(SumIsMoreThanThird(_sideA, _sideB, _sideC)
-              || SumIsMoreThanThird(_sideB, _sideA, _sideC)
+              || SumIsMoreThanThird(_sideB, _sideC, _sideA)
               || SumIsMoreThanThird(_sideC, _sideA, _sideB)))
             throw new ArgumentException("The sum of two side lengths has to exceed the length of the third side.");
 
